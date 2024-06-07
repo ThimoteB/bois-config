@@ -5,6 +5,7 @@ const divide = (a: number, b: number): number => a / b;
 const multiply = (a: number, b: number): number => a * b;
 
 const printSum = (a: number, b: number): void => {
+  debugger;
   console.log(`Sum of ${a} and ${b} is ${sum(a, b)}`);
 };
 
