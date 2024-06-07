@@ -2,6 +2,7 @@
   "name": "bois-config",
   "version": "1.0.0",
   "type": "module",
+  "type": "module",
   "description": "",
   "main": "src/index.ts",
   "scripts": {
