@@ -7,7 +7,7 @@ on:
 jobs:
   release:
     name: Release
-    runs-ons: ubuntu-latest
+    runs-on: ubuntu-latest
     permissions:
       contents: write
     steps:
