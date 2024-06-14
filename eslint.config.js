@@ -1,14 +1,19 @@
-import js from "@eslint/js";
+import eslintJS from "@eslint/js";
+import tseslint from "typescript-eslint";
+
 export default [
-  js.configs.recommended,
+  eslintJS.configs.recommended,
+  ...tseslint.configs.recommended,
+  ...tseslint.configs.strict,
+  ...tseslint.configs.stylistic,
   {
     name: "eslint-config-bois-config",
     rules: {
-      "no-debugger": "warn",
-      "no-console": "error",
+      "no-debugger": "error",
+      "no-console": "warn",
     },
   },
   {
-    ignores: ["**/node_modules/**", "**/dist/**"],
+    ignores: ["**/node_modules/**", "dist/**"],
   },
 ];
